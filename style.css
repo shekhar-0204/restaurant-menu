@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f2;
+  color: #333;
+}
+
+header {
+  background-color: #7b1e1e;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #ffd8d8;
+}
+
+.menu-section, .cart-section {
+  padding: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-left: 6px solid goldenrod;
+  transition: transform 0.2s;
+}
+.menu-item:hover { transform: scale(1.01); }
+
+.menu-item img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #eee;
+}
+
+.menu-details { flex: 1; padding-left: 1rem; }
+.menu-details h3 { margin: 0; font-size: 1.4rem; color: #7b1e1e; }
+.menu-details p { margin: 5px 0; font-size: 0.95rem; color: #555; }
+.menu-details span { font-weight: bold; font-size: 1rem; color: #222; }
+
+button {
+  background-color: #a11f1f;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+button:hover { background-color: #c02626; }
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.qty-controls button {
+  background-color: #a11f1f;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cart-section {
+  background-color: #fef2e6;
+  border-top: 2px solid #d6ae7b;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+footer {
+  background-color: #7b1e1e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu-item { flex-direction: column; align-items: center; text-align: center; }
+  .menu-item img { width: 90%; height: auto; }
+  .menu-details { padding-left: 0; }
+}
+
